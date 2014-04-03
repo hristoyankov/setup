@@ -21,6 +21,11 @@ npm install -g jshint
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
+# add-apt-repository is not installed in some ubuntu distributions
+# e.g. hashicorp/precise64. Let's install it!
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y python-software-properties
+
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
 sudo add-apt-repository -y ppa:cassou/emacs
