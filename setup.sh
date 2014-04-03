@@ -37,6 +37,7 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install and setup rvm and Rails 4.0.0
 curl -L https://get.rvm.io | bash -s stable
+source $HOME/.rvm/scripts/rvm
 rvm requirements --autolibs=enable
 rvm install 2.0.0
 rvm use 2.0.0
