@@ -32,6 +32,16 @@ sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
+# Install and setup rvm and Rails 4.0.0
+sudo apt-get install -y apache2 libmysqlclient-dev mysql-server
+curl -L https://get.rvm.io | bash -s stable
+rvm requirements --autolibs=enable
+rvm install 2.0.0
+rvm use 2.0.0
+rvm --default 2.0.0
+gem install rails --version 4.0.0 --no-ri --no-rdoc
+
+
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
