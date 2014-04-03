@@ -5,6 +5,9 @@
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
+git config --global user.name "Hristo Yankov"
+git config --global user.email "ico.yankov@gmail.com"
+git config --global core.editor emacs
 sudo apt-get install -y curl
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
@@ -32,8 +35,8 @@ sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
+<<<<<<< HEAD
 # Install and setup rvm and Rails 4.0.0
-sudo apt-get install -y apache2 libmysqlclient-dev mysql-server
 curl -L https://get.rvm.io | bash -s stable
 rvm requirements --autolibs=enable
 rvm install 2.0.0
@@ -42,6 +45,8 @@ rvm --default 2.0.0
 gem install rails --version 4.0.0 --no-ri --no-rdoc
 
 
+=======
+>>>>>>> parent of bd6b5a1... Added rvm, ruby2.0.0 and rails4
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
