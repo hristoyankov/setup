@@ -35,7 +35,6 @@ sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
-<<<<<<< HEAD
 # Install and setup rvm and Rails 4.0.0
 curl -L https://get.rvm.io | bash -s stable
 rvm requirements --autolibs=enable
@@ -45,8 +44,6 @@ rvm --default 2.0.0
 gem install rails --version 4.0.0 --no-ri --no-rdoc
 
 
-=======
->>>>>>> parent of bd6b5a1... Added rvm, ruby2.0.0 and rails4
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
